@@ -1,0 +1,181 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Audio:ICS-43434 U1
+U 1 1 5E27F3BF
+P 3000 2000
+F 0 "U1" H 3000 2531 50  0000 C CNN
+F 1 "ICS-43434" H 3000 2440 50  0000 C CNN
+F 2 "Sensor_Audio:TDK_ICS-43434" H 3000 2000 50  0001 C CNN
+F 3 "" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2300 3000 2450
+Wire Wire Line
+	3000 1650 3000 1350
+Wire Wire Line
+	3350 2050 3750 2050
+Wire Wire Line
+	3350 2150 3750 2150
+Wire Wire Line
+	2650 1950 2300 1950
+Wire Wire Line
+	2650 2050 2300 2050
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5E2945BD
+P 4050 1500
+F 0 "J1" H 4158 1781 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4158 1690 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4050 1500 50  0001 C CNN
+F 3 "~" H 4050 1500 50  0001 C CNN
+	1    4050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5E294D7F
+P 4050 2050
+F 0 "J2" H 4158 2331 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4158 2240 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4050 2050 50  0001 C CNN
+F 3 "~" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	1    0    0    -1  
+$EndComp
+Text Label 3650 2050 0    50   ~ 0
+LR
+Text Label 3750 2150 2    50   ~ 0
+WS
+Text Label 2300 1950 0    50   ~ 0
+SD
+Text Label 2300 2050 0    50   ~ 0
+SCK
+$Comp
+L power:GND #PWR0101
+U 1 1 5E2953C9
+P 3000 2450
+F 0 "#PWR0101" H 3000 2200 50  0001 C CNN
+F 1 "GND" H 3005 2277 50  0000 C CNN
+F 2 "" H 3000 2450 50  0001 C CNN
+F 3 "" H 3000 2450 50  0001 C CNN
+	1    3000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E2955B7
+P 3000 1350
+F 0 "#PWR0102" H 3000 1200 50  0001 C CNN
+F 1 "VCC" H 3017 1523 50  0000 C CNN
+F 2 "" H 3000 1350 50  0001 C CNN
+F 3 "" H 3000 1350 50  0001 C CNN
+	1    3000 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2150 4700 2150
+Wire Wire Line
+	4250 2050 4700 2050
+Wire Wire Line
+	4250 1950 4700 1950
+Wire Wire Line
+	4250 1600 4700 1600
+Wire Wire Line
+	4250 1500 4700 1500
+Wire Wire Line
+	4250 1400 4700 1400
+Text Label 4700 1400 2    50   ~ 0
+GND
+Text Label 4700 1500 2    50   ~ 0
+SCK
+Text Label 4700 1600 2    50   ~ 0
+VCC
+Text Label 4700 1950 2    50   ~ 0
+LR
+Text Label 4700 2050 2    50   ~ 0
+WS
+Text Label 4700 2150 2    50   ~ 0
+SD
+$Comp
+L Device:C C1
+U 1 1 5E296A82
+P 5250 1400
+F 0 "C1" H 5365 1446 50  0000 L CNN
+F 1 "100nF" H 5365 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5288 1250 50  0001 C CNN
+F 3 "~" H 5250 1400 50  0001 C CNN
+	1    5250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E296B74
+P 5700 1400
+F 0 "C2" H 5815 1446 50  0000 L CNN
+F 1 "10uF" H 5815 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5738 1250 50  0001 C CNN
+F 3 "~" H 5700 1400 50  0001 C CNN
+	1    5700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1250 5250 1050
+Wire Wire Line
+	5250 1050 5500 1050
+Wire Wire Line
+	5700 1050 5700 1250
+Wire Wire Line
+	5700 1550 5700 1700
+Wire Wire Line
+	5700 1700 5500 1700
+Wire Wire Line
+	5250 1700 5250 1550
+Wire Wire Line
+	5500 1700 5500 1850
+Connection ~ 5500 1700
+Wire Wire Line
+	5500 1700 5250 1700
+Wire Wire Line
+	5500 1050 5500 900 
+Connection ~ 5500 1050
+Wire Wire Line
+	5500 1050 5700 1050
+$Comp
+L power:VCC #PWR0103
+U 1 1 5E298434
+P 5500 900
+F 0 "#PWR0103" H 5500 750 50  0001 C CNN
+F 1 "VCC" H 5517 1073 50  0000 C CNN
+F 2 "" H 5500 900 50  0001 C CNN
+F 3 "" H 5500 900 50  0001 C CNN
+	1    5500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E298832
+P 5500 1850
+F 0 "#PWR0104" H 5500 1600 50  0001 C CNN
+F 1 "GND" H 5505 1677 50  0000 C CNN
+F 2 "" H 5500 1850 50  0001 C CNN
+F 3 "" H 5500 1850 50  0001 C CNN
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
