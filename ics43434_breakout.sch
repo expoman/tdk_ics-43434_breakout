@@ -178,4 +178,23 @@ F 3 "" H 5500 1850 50  0001 C CNN
 	1    5500 1850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R1
+U 1 1 5E29CF02
+P 1550 1400
+F 0 "R1" V 1343 1400 50  0000 C CNN
+F 1 "100k" V 1434 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1480 1400 50  0001 C CNN
+F 3 "~" H 1550 1400 50  0001 C CNN
+	1    1550 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1400 1050 1400
+Wire Wire Line
+	1700 1400 2100 1400
+Text Label 1050 1400 0    50   ~ 0
+SD
+Text Label 2100 1400 2    50   ~ 0
+GND
 $EndSCHEMATC
